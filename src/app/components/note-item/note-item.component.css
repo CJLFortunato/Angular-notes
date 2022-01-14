@@ -1,0 +1,11 @@
+.note-item {
+    background-color: peachpuff;
+    width: 100px;
+    height: 100px;
+    padding: .5rem;
+    margin: 1rem;
+}
+p {
+    margin: 0;
+    text-align: center;
+}
