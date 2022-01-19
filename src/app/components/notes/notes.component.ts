@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NoteService } from 'src/app/services/note.service';
+import { takeLast } from 'rxjs';
+import { NoteService, Note } from 'src/app/services/note.service';
 
 @Component({
   selector: 'app-notes',
@@ -8,7 +9,7 @@ import { NoteService } from 'src/app/services/note.service';
 })
 export class NotesComponent implements OnInit {
 
-  notes: string[] = [];
+  notes: Note[] = [];
 
   constructor(private noteService: NoteService) { }
 
@@ -16,11 +17,14 @@ export class NotesComponent implements OnInit {
     this.noteService.getNotes().subscribe((notes) => this.notes = notes);
   } 
 
-  deleteNote(note: string) {
-    const id: number = this.notes.findIndex((item) => item === note);
+  deleteNote(note: Note) {
+    this.noteService.deleteNote(note).subscribe(() => this.notes = this.notes.filter(t => t.id !== note.id));
 
-    this.noteService.deleteNote(id).subscribe(() => this.notes.filter(n => n !== note));
+  }
 
+  addNote(newNote: Note) {
+    this.noteService.addNote(newNote).subscribe((note) => this.notes.push(note));
+    
   }
 
 }

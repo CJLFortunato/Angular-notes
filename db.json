@@ -1,9 +1,24 @@
 {
   "notes": [
-    "Lorem",
-    "ipsum",
-    "dolor",
-    "sint",
-    "amet"
+    {
+      "id": 1,
+      "text": "Lorem"
+    },
+    {
+      "id": 2,
+      "text": "Ispum"
+    },
+    {
+      "id": 3,
+      "text": "Dolor"
+    },
+    {
+      "id": 4,
+      "text": "Sint"
+    },
+    {
+      "text": "Patch notes when",
+      "id": 6
+    }
   ]
 }

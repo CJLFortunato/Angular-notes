@@ -1,0 +1,12 @@
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    grid-auto-rows: 20% 20% 20% 20%; 
+    gap: 2rem;
+    grid-auto-flow: row dense;
+    width: 100vw;
+    height: 100vh;
+    padding: .5%;
+    border: 1px solid gray;
+
+}

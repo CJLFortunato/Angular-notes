@@ -1,4 +1,4 @@
 <header>
     <h1>Notes</h1>
-    <app-button color="green" text="Add" (btnClick)="toggleAddNote()"></app-button>
+    <app-button color='{{ showAddNote ? "red" : "green"}}' text='{{ showAddNote ? "Close" : "Add"}}' (btnClick)="toggleAddNote()"></app-button>
 </header>

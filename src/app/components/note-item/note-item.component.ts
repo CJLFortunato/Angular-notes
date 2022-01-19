@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Note } from 'src/app/services/note.service';
 
 
 @Component({
@@ -8,16 +9,17 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class NoteItemComponent implements OnInit {
 
-  @Input() text: string = "";
-  @Output() onDelete: EventEmitter<string> = new EventEmitter();
+  @Input() note: Note = {id : 0, text : ""};
+
+  @Output() onDelete: EventEmitter<Note> = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onClick(text: string) {
-    this.onDelete.emit(text);
-  }
+  onClickDelete(note: Note) {
+    this.onDelete.emit(note);
+  } 
 
 }
