@@ -1,12 +1,22 @@
+main {
+    background-image: url(src\josephine-bredehoft-KsAo8ouBn8A-unsplash.jpg);
+    background-color: saddlebrown;
+    background-size: cover;
+    margin: 0;
+}
+
+
 .notes-grid {
     display: grid;
     grid-template-columns: repeat(5, 18%);
-    grid-auto-rows: 20% 20% 20% 20%; 
+    grid-auto-rows: 200px; 
     gap: 2rem;
     grid-auto-flow: row dense;
-    width: 100vw;
-    height: 100vh;
+    width: 99%;
+    min-height: 100vh;
     padding: .5%;
-    border: 1px solid gray;
+    padding-top: 6rem;
+    /* border: 1px solid gray; */
+    background-color: transparent;
 
 }

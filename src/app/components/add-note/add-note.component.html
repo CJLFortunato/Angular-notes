@@ -1,8 +1,10 @@
 <div class="add-note" *ngIf="showAddNote">
     <form (ngSubmit)="onSubmit()">
-        <label for="text">Note text</label>
+        <label for="text">Add a Note</label>
         <textarea type="text" id="text" name="text" [(ngModel)]="text" placeholder="Type your note here"></textarea>
         <input type="submit" value="Save">
     </form>
 </div>
+
+
  

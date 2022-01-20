@@ -1,5 +1,11 @@
 .add-note {
-    background-color: pink;
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    width: 100vw;
+    height: 100vh;
     
 }
 
@@ -7,4 +13,36 @@ form {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    padding: 2%;
+    /* border: 1px solid olive; */
+    background-color: white;
+    width: 500px;
+    /* height: 500px; */
+    margin: 15rem auto;
+}
+form label {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+form textarea {
+    margin-bottom: 2rem;
+    height: 12rem;
+    width: 90%;
+    font-size: 1.2rem;
+}
+form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+}
+form input:hover {
+    transform: scale(102%);
+   
+}
+form input:active {
+    transform: scale(98%);
 }

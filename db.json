@@ -2,23 +2,39 @@
   "notes": [
     {
       "id": 1,
-      "text": "Lorem"
+      "text": "Remember to iron the dog"
     },
     {
       "id": 2,
-      "text": "Ispum"
+      "text": "Thaw a rat for Monty"
     },
     {
       "id": 3,
-      "text": "Dolor"
+      "text": "Vacuum ceiling"
     },
     {
       "id": 4,
-      "text": "Sint"
+      "text": "Buy medication (Dont forget again!!!!)"
     },
     {
-      "text": "Patch notes when",
+      "text": "A long time ago in a galaxy far far away yOU NEED TO DO THE LAUNDRY!! SERIOUSLY!!!! ",
+      "id": 5
+    },
+    {
+      "text": "Look up this 'World Domination' thing",
       "id": 6
+    },
+    {
+      "text": "What is man, if not a miserable little pile of secrets?",
+      "id": 7
+    },
+    {
+      "text": "Organize blackmail folder.",
+      "id": 8
+    },
+    {
+      "text": "call francis about the meeting for the ad campaign. something about sidewalks?",
+      "id": 9
     }
   ]
 }

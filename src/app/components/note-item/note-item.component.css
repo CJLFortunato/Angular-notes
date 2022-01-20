@@ -1,12 +1,44 @@
 .note-item {
-    background-color: peachpuff;
+    
+    background-color: lightgoldenrodyellow;
      /* width: 100px;*/
     height: 200px; 
     padding: .5rem;
     margin: 0; 
+    box-shadow: 5px 5px 5px 0px hsla(0, 0%, 0%, 0.3);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
     
 }
 p {
+    background: repeating-linear-gradient(lightgoldenrodyellow, lightgoldenrodyellow 30px, darkred 30px, darkred 32px);
     margin: 0;
-    text-align: center;
+    text-align: left;
+    font-size: 1.2rem;
+    /* border: 1px solid red; */
+    height: 95%;
+    overflow: hidden;
+    width: 97%;
+    align-self: center;
+    text-overflow: ellipsis;
+    line-height: 2rem;
+    
+}
+.note-item button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    margin : 0;
+    color: hsla(10, 50%, 20%, 0.6);
+    cursor: pointer;
+    /* border: 1px solid red; */
+    padding: 0;
+    height: 1.4rem;
+}
+.note-item button:hover {
+    color: hsla(10, 50%, 20%, 0.8);
+}
+.note-item button:active{
+    background-color: hsla(0, 0%, 0%, 0.2);
 }

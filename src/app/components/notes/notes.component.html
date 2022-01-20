@@ -1,4 +1,7 @@
-<app-add-note (onAddNote)="addNote($event)"></app-add-note>
-<div class="notes-grid" >
-    <app-note-item *ngFor="let note of notes" [note]="note" (onDelete)="deleteNote(note)"></app-note-item>
-</div>
+<main>
+    <app-add-note (onAddNote)="addNote($event)"></app-add-note>
+    <div class="notes-grid" >
+        <app-note-item *ngFor="let note of notes" [note]="note" (onDelete)="deleteNote(note)"></app-note-item>
+    </div>
+</main>
+
